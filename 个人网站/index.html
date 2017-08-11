@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <title></title>
+        <link rel="stylesheet" href="css/common.css"/>
+        <link rel="stylesheet" href="css/header.css"/>
+    </head>
+    <body>
+        <div id="header">
+            <div class="wrapper">
+                <ul id="nav">
+                    <li>About Me</li>
+                    <li>My Skills</li>
+                    <li>My Projects</li>
+                    <li>Contact Me</li>
+                </ul>
+                <div id="nav-menu">
+                    <img src="img/menu_icon.svg" alt="" class="selected"/>
+                    <span>menu</span>
+                </div>
+            </div>
+        </div>
+        <div id="container">
+            <div id="mask"></div>
+            <div id="receptacle">
+                <ul id="menu">
+                    <li><a href="">About Me</a></li>
+                    <li><a href="">My Skills</a></li>
+                    <li><a href="">My Projects</a></li>
+                    <li><a href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="about-me">111</div>
+        <div id="my-skills"></div>
+
+        <script src="js/jquery-1.11.2.js"></script>
+        <script>
+            $(function(){
+                var $imgs = $("#nav-menu img");
+                var $span = $("#nav-menu span");
+                var $container = $("#container");
+                $imgs.hover(function(){
+                    $imgs.attr("src","img/menu_icon2.svg");
+                },function(){
+                    $imgs.attr("src","img/menu_icon.svg");
+                });
+                $("#receptacle").add("#mask").css({
+                   height: document.body.clientHeight
+                });
+                $imgs.add($span).on("click",function(){
+                    $container.css({
+                        display: "block"
+                    });
+                });
+                $("#mask").on("click",function(){
+                    $container.css({
+                        display: "none"
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

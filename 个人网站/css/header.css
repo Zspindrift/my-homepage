@@ -1,0 +1,94 @@
+/*  header,container开始  */
+#header{
+    /*background: rgba(160, 208, 151, 1)*/
+    background: rgba(255, 250, 182, 1);
+    /*background: rgba(160, 208, 151, 1);*/
+    /*background: #000;*/
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+#nav{
+    margin-top: 18px;
+    float: right;
+}
+#nav li{
+    float: left;
+    width: 100px;
+    color: #000000;
+    font-size: 12px;
+    text-align: right;
+
+}
+#nav li:hover{
+    color: rgba(160, 208, 151, 1);
+    background: rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+#nav-menu{
+    display: none;
+}
+@media(max-width: 767px){
+    #nav{
+        display: none;
+        float: none;
+    }
+    #nav-menu{
+        margin-top: 8px;
+        cursor: pointer;
+        display: block;
+    }
+    #nav-menu img{
+        width: 30px;
+        height: 20px;
+        margin-left: 2px;
+        display: block;
+    }
+    #nav-menu span{
+        width: 35px;
+        height: 14px;
+        line-height: 14px;
+        display: block;
+    }
+    #nav-menu span:hover{
+        color: rgba(160, 208, 151, 1);
+        cursor: pointer;
+    }
+}
+/*  header 结束*  /
+
+/*  container开始  */
+#container{
+    margin-top: 50px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#mask{
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+#receptacle{
+    background: #000000;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#menu li{
+    height: 100px;
+    line-height: 100px;
+    margin-left: 15%;
+}
+#menu li a{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+#about-me{
+    height: 1000px;
+    /*background: #000000;*/
+}

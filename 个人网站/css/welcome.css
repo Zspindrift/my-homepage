@@ -1,0 +1,35 @@
+#welcome{
+    margin-top: 80px;
+    background: url(../img/banner5.jpg);
+    height: 600px;
+    position: relative;
+}
+#per-introduce{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#per-introduce p:first-child{
+    font-size: 50px;
+}
+#per-introduce p:last-child{
+    font-size: 25px;
+}
+#my-name{
+    font-size: 60px;
+    font-weight: 600;
+}
+#particles-js{
+    position: absolute;
+    top: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
